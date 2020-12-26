@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card} from 'react-bootstrap';
+import { Card,Button} from 'react-bootstrap';
 import uploadpic from '../../assets/svg/main-logo.svg';
 
 
@@ -14,7 +14,9 @@ function WelcomeCard() {
                 <Card.Text>
                  Explore our new initiative to Learn Sanskrit Language via an Attractive Game
                 </Card.Text>
+                <a href="/comingsoon"><Button variant="outline-primary">Enter the Game</Button></a>
             </Card.Body>
+
             {/* <Card.Footer className="text-muted">See our Projects</Card.Footer> */}
         </Card>
 
