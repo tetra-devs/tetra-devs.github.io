@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import { HomePage, ErrorPage, CommingSoonPage } from './pages';
 import { NavbarComponent, Footer, ScrollToTop } from './components';
 
@@ -31,10 +31,9 @@ function App() {
       <ScrollToTop />
       <NavbarComponent />
       <Switch>
-        <Route path='/' exact component={HomePage} />
-        <Route path='/comingsoon' exact component={CommingSoonPage} />
-        <Route path="/404" component={ErrorPage} />
-        <Redirect to="/404" />
+        <Route exact path='/' component={HomePage} />
+        <Route exact path='/comingsoon' component={CommingSoonPage} />
+        <Route component={ErrorPage} status={404} />
       </Switch>
       <Footer />
     </Router>

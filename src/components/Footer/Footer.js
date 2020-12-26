@@ -26,7 +26,7 @@ export default function Footer() {
                         <div className="col-md-4 col-sm-6">
                             <h4>Contact Us</h4>
                             <ul className="list-unstyled">
-                                <li><a href="/#">Drop an Email</a></li>
+                                <li><a href="mailto:tetradev@googlegroups.com">Drop an Email</a></li>
                             </ul>
                         </div>
                         {/* Column 3 */}
