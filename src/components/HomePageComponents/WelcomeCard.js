@@ -14,7 +14,7 @@ function WelcomeCard() {
                 <Card.Text>
                  Explore our new initiative to Learn Sanskrit Language via an Attractive Game
                 </Card.Text>
-                <a href="/comingsoon"><Button variant="outline-primary">Enter the Game</Button></a>
+                <a href="#/comingsoon"><Button variant="outline-primary">Enter the Game</Button></a>
             </Card.Body>
 
             {/* <Card.Footer className="text-muted">See our Projects</Card.Footer> */}
